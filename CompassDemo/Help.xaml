@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="CompassDemo.Help"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CompassDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+	<Page.Background>
+		<ImageBrush Stretch="Fill" ImageSource="space.jpg"/>
+	</Page.Background>
+
+        <Hub Header="Help">
+            <!--1-->
+            <HubSection Header="Calibration">
+                <DataTemplate>
+                    <StackPanel>
+                        <Image HorizontalAlignment="Center" Height="211" VerticalAlignment="Top" Width="352" Source="calibrate.png" Margin="0,0,0,0"/>
+                    <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" FontSize="21">
+                    <LineBreak/>Hold the device infront of you and sweep it through a figure 8 pattern as shown until the Accuracy is high.<LineBreak/>
+                    <LineBreak/>Please press back to the compass page and start calibration.
+                    </TextBlock>
+                    <!--Button Name="calibrationButton" Content="Calibrate Now" Click="calibrationButton_Click" Width="200"></-->
+                </StackPanel>
+                </DataTemplate>
+            </HubSection>
+            <!--2-->
+            <HubSection Header="Display">
+                <DataTemplate>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="Capture.png" Margin="22,0,16.833,0" Height="474" Width="302"/>
+                </DataTemplate>
+            </HubSection>
+            <!--3-->
+            <HubSection Header="Developer">
+                <DataTemplate>
+                    <StackPanel>
+                    <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top"
+                       FontSize="21">
+                <LineBreak/>Mukosame
+                <LineBreak/>
+                    </TextBlock>
+
+                    <Button Content="Send me email" HorizontalAlignment="Center" Width="250" Click="email"/>
+                    <Button Content="View my other apps" HorizontalAlignment="Center"  Width="250" Click="otherapp"/>
+                </StackPanel>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+ 
+</Page>
