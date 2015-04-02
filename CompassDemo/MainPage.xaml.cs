@@ -68,10 +68,10 @@ namespace CompassDemo
             await this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
                 CompassReading reading = args.Reading;
-                magneticNorth.Text = String.Format("{0,5:0}°", reading.HeadingMagneticNorth);
+                magneticNorth.Text = String.Format("{0,5:0.00}°\nAccuracy: ", reading.HeadingMagneticNorth);
                 if (reading.HeadingTrueNorth != null)
                 {
-                    trueNorth.Text = String.Format("{0,5:0.00}°\nAccuracy: \n", reading.HeadingTrueNorth);
+                    trueNorth.Text = String.Format("{0,5:0.00}°", reading.HeadingTrueNorth);
                 }
                 else
                 {
@@ -80,19 +80,19 @@ namespace CompassDemo
                 switch (reading.HeadingAccuracy)
                 {
                     case MagnetometerAccuracy.Unknown:
-                        trueNorth.Text += "Unknown";
+                        magneticNorth.Text += "Unknown";
                         break;
                     case MagnetometerAccuracy.Unreliable:
-                        trueNorth.Text += "Unreliable";
+                        magneticNorth.Text += "Unreliable";
                         break;
                     case MagnetometerAccuracy.Approximate:
-                        trueNorth.Text += "Approximate";
+                        magneticNorth.Text += "Approximate";
                         break;
                     case MagnetometerAccuracy.High:
-                        trueNorth.Text += "High";
+                        magneticNorth.Text += "High";
                         break;
                     default:
-                        trueNorth.Text += "No data";
+                        magneticNorth.Text += "No data";
                         break;
                 }
                 double TrueHeading = reading.HeadingTrueNorth.Value;

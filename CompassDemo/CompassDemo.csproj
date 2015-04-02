@@ -109,7 +109,7 @@
     <Content Include="background.jpg" />
     <Content Include="calibrate.png" />
     <Content Include="Capture.PNG" />
-    <Content Include="space.jpg" />
+    <Content Include="lock.png" />
     <Content Include="starpointer.png" />
     <Content Include="sun2.png" />
     <Content Include="s_compass.png" />
@@ -129,7 +129,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Helvetica LT 25 Ultra Light.ttf" />
+    <Content Include="Assets\msyhl.ttc" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

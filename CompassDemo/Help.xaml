@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 	<Page.Background>
-		<ImageBrush Stretch="Fill" ImageSource="space.jpg"/>
+		<ImageBrush Stretch="Fill" ImageSource="background.jpg"/>
 	</Page.Background>
 
         <Hub Header="Help">
@@ -20,7 +20,7 @@
                     <LineBreak/>Hold the device infront of you and sweep it through a figure 8 pattern as shown until the Accuracy is high.<LineBreak/>
                     <LineBreak/>Please press back to the compass page and start calibration.
                     </TextBlock>
-                    <!--Button Name="calibrationButton" Content="Calibrate Now" Click="calibrationButton_Click" Width="200"></-->
+                    
                 </StackPanel>
                 </DataTemplate>
             </HubSection>

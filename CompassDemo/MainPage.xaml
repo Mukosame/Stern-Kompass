@@ -23,10 +23,8 @@
 
     <Grid x:Name="LayoutRoot" >
 
-        <StackPanel Margin="12,50,12,0">
+        <StackPanel Margin="12,0,12,0">
             <!--指南针罗盘UI-->
-
-
             <Image Height="24" HorizontalAlignment="Center"  x:Name="PointerImage" VerticalAlignment="Top"  Source="starpointer.png" />
 
             <!--指南针罗盘UI-->
@@ -42,15 +40,11 @@
                     </Ellipse.Fill>
                 </Ellipse>
             </Grid>
+
+                <TextBlock Text="123" FontWeight="Light" x:Name="trueNorth" Foreground="#FFFFFF"  Grid.Row="0" FontSize="105" HorizontalAlignment="Left" FontFamily="Assets/msyhl.ttc#Microsoft YaHei UI Light"/>
+                <TextBlock Text="123" x:Name="magneticNorth" Grid.Row="1" Foreground="#FFF" FontSize="23" HorizontalAlignment="Left" FontFamily="Assets/msyhl.ttc#Microsoft YaHei UI Light"/>
+           
             <!--精度和角度显示-->
-            <Grid Height="62" Margin="12,20,0,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock  x:Name="magneticNorth" Foreground="#FFC8C7CC"  Grid.Column="0" FontSize="60" HorizontalAlignment="Right" FontFamily="Assets/Helvetica LT 25 Ultra Light.ttf#HelveticaNeue LT 25 UltLight" FontWeight="Bold"/>
-                <TextBlock x:Name="trueNorth" Grid.Column="1" Foreground="#FFC8C7CC" FontFamily="Assets/Helvetica LT 25 Ultra Light.ttf#HelveticaNeue LT 25 UltLight" FontSize="17" />
-            </Grid>
 
         </StackPanel>
         <!--TextBlock  x:Name="headingAccuracy" Foreground="#FFC8C7CC" FontFamily="Assets/Helvetica LT 45 Light.ttf#HelveticaNeue LT 45 Light" HorizontalAlignment="Center"/-->

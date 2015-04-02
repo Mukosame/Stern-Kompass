@@ -124,7 +124,7 @@ namespace CompassDemo
 
             Windows.ApplicationModel.Email.EmailMessage mail = new Windows.ApplicationModel.Email.EmailMessage();
             mail.Subject = "[WP8]Feedback" + appversion;
-            mail.Body = "\n\n\n生产厂商：" + Manufacturer + "\n手机型号：" + FriendlyName + "\nOS版本：" + OSVersion;
+            mail.Body = "\n\n\nManufacturer：" + Manufacturer + "\nHandy Name：" + FriendlyName + "\nOS Version：" + OSVersion;
             mail.To.Add(new Windows.ApplicationModel.Email.EmailRecipient("mukosame@gmail.com", "Mukosame"));
             await Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(mail);
 
