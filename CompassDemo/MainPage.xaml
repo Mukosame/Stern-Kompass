@@ -40,10 +40,10 @@
                     </Ellipse.Fill>
                 </Ellipse>
             </Grid>
-
-                <TextBlock Text="123" FontWeight="Light" x:Name="trueNorth" Foreground="#FFFFFF"  Grid.Row="0" FontSize="105" HorizontalAlignment="Left" FontFamily="Assets/msyhl.ttc#Microsoft YaHei UI Light"/>
-                <TextBlock Text="123" x:Name="magneticNorth" Grid.Row="1" Foreground="#FFF" FontSize="23" HorizontalAlignment="Left" FontFamily="Assets/msyhl.ttc#Microsoft YaHei UI Light"/>
            
+                <TextBlock Text="" FontWeight="Light" x:Name="trueNorth" Foreground="#FFFFFF" FontSize="105" HorizontalAlignment="Left" FontFamily="Assets/SegoeWP-Light.ttf#Segoe WP Light"/>
+                <TextBlock  x:Name="magneticNorth" Foreground="#FFF" FontSize="23" HorizontalAlignment="Left"/>
+            
             <!--精度和角度显示-->
 
         </StackPanel>

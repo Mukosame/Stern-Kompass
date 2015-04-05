@@ -129,7 +129,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\msyhl.ttc" />
+    <Content Include="Assets\SegoeWP-Light.ttf" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
