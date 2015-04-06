@@ -142,7 +142,7 @@ namespace CompassDemo
         private async void LikeButton_Click(object sender, RoutedEventArgs e)
         {
             await Windows.System.Launcher.LaunchUriAsync(
-    new Uri(string.Format("ms-windows-store:reviewapp?appid=" + "fb408308-0028-4940-acd5-68afa1652d1f")));
+    new Uri(string.Format("ms-windows-store:reviewapp?appid=" + "f6406bbd-cf07-43af-ae48-26e9641d369e")));
         }
         #endregion
 
