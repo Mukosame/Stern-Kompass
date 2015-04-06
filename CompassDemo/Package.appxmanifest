@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="789fe57f-5ccb-49e7-b25d-8ba05e8a3db0" Publisher="CN=zhenglin" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="789fe57f-5ccb-49e7-b25d-8ba05e8a3db0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="31979Mukosame.CompassStellaris" Publisher="CN=A51910E1-01F8-4697-9ECA-36EDA9D77739" Version="1.1.0.0" />
+  <mp:PhoneIdentity PhoneProductId="36f9fe45-f39a-4efe-a4a7-70ee82fb6a8e" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>CompassDemo</DisplayName>
+    <DisplayName>Compass Stellaris</DisplayName>
     <PublisherDisplayName>Mukosame</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>

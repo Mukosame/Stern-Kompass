@@ -7,17 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 	<Page.Background>
-		<ImageBrush Stretch="Fill" ImageSource="background.jpg"/>
+		<ImageBrush Stretch="Fill" ImageSource="SplashScreen.jpg"/>
 	</Page.Background>
 
-        <Hub Header="Help">
+    <Hub Header="" Margin="0,60,0,0">
             <!--1-->
             <HubSection Header="Calibration">
                 <DataTemplate>
-                    <StackPanel>
+                    <StackPanel >
                         <Image HorizontalAlignment="Center" Height="211" VerticalAlignment="Top" Width="352" Source="calibrate.png" Margin="0,0,0,0"/>
                     <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" FontSize="21">
-                    <LineBreak/>Hold the device infront of you and sweep it through a figure 8 pattern as shown until the Accuracy is high.<LineBreak/>
+                    <LineBreak/><LineBreak/>Hold the device infront of you and sweep it through a figure 8 pattern as shown until the Accuracy is high.<LineBreak/>
                     <LineBreak/>Please press back to the compass page and start calibration.
                     </TextBlock>
                     
@@ -27,7 +27,7 @@
             <!--2-->
             <HubSection Header="Display">
                 <DataTemplate>
-                    <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="Capture.png" Margin="22,0,16.833,0" Height="474" Width="302"/>
+                <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="Capture.jpg" Margin="0,0,0,30"/>
                 </DataTemplate>
             </HubSection>
             <!--3-->
@@ -40,8 +40,10 @@
                 <LineBreak/>
                     </TextBlock>
 
-                    <Button Content="Send me email" HorizontalAlignment="Center" Width="250" Click="email"/>
-                    <Button Content="View my other apps" HorizontalAlignment="Center"  Width="250" Click="otherapp"/>
+                    <Grid Margin="0,40,0,0" Height="150" >                     
+                    <Button Content="Send me email" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Click="email" BorderThickness="1.5"/>
+                    <Button Content="View my other apps" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="250" Click="otherapp" BorderThickness="1.5"/>
+                    </Grid>
                 </StackPanel>
                 </DataTemplate>
             </HubSection>

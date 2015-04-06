@@ -68,10 +68,11 @@ namespace CompassDemo
             await this.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
                 CompassReading reading = args.Reading;
-                magneticNorth.Text = String.Format("{0,5:0.00}°\nAccuracy: ", reading.HeadingMagneticNorth);
+                magneticNorth.Text = String.Format("{0,5:0.00}°\nAccuracy:\n", reading.HeadingMagneticNorth);
+               // magneticNorth.Text = "Magnetic North \nAccuracy:\n";
                 if (reading.HeadingTrueNorth != null)
                 {
-                    trueNorth.Text = String.Format("{0,5:0.0}°", reading.HeadingTrueNorth);
+                   trueNorth.Text = String.Format("{0,5:0}°", reading.HeadingTrueNorth);
                 }
                 else
                 {

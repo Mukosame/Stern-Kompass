@@ -40,12 +40,16 @@
                     </Ellipse.Fill>
                 </Ellipse>
             </Grid>
-           
-                <TextBlock Text="" FontWeight="Light" x:Name="trueNorth" Foreground="#FFFFFF" FontSize="105" HorizontalAlignment="Left" FontFamily="Assets/SegoeWP-Light.ttf#Segoe WP Light"/>
-                <TextBlock  x:Name="magneticNorth" Foreground="#FFF" FontSize="23" HorizontalAlignment="Left"/>
-            
+                           
             <!--精度和角度显示-->
-
+            <Grid Height="90" Margin="40,40,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="" x:Name="trueNorth" Foreground="#FFC8C7CC"  Grid.Column="0" FontSize="67" HorizontalAlignment="Right" FontFamily="Assets/Helvetica LT 25 Ultra Light.ttf#HelveticaNeue LT 25 UltLight" FontWeight="Bold"/>
+                <TextBlock x:Name="magneticNorth" Grid.Column="1" Foreground="#FFC8C7CC" FontFamily="Assets/Helvetica LT 25 Ultra Light.ttf#HelveticaNeue LT 25 UltLight" FontSize="17" />
+            </Grid>
         </StackPanel>
         <!--TextBlock  x:Name="headingAccuracy" Foreground="#FFC8C7CC" FontFamily="Assets/Helvetica LT 45 Light.ttf#HelveticaNeue LT 45 Light" HorizontalAlignment="Center"/-->
     </Grid>

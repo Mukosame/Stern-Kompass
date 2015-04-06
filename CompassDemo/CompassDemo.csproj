@@ -14,6 +14,8 @@
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -108,9 +110,11 @@
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="background.jpg" />
     <Content Include="calibrate.png" />
-    <Content Include="Capture.PNG" />
-    <Content Include="lock.png" />
+    <Content Include="Capture.jpg" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="SplashScreen.jpg" />
     <Content Include="starpointer.png" />
+    <Content Include="StoreManifest.xml" />
     <Content Include="sun2.png" />
     <Content Include="s_compass.png" />
   </ItemGroup>
@@ -129,7 +133,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\SegoeWP-Light.ttf" />
+    <Content Include="Assets\Helvetica LT 25 Ultra Light.ttf" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
