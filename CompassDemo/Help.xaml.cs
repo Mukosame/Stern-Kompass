@@ -102,7 +102,7 @@ namespace CompassDemo
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
-            appversion = e.Parameter.ToString();
+            appversion = "Compass Stellaris" + e.Parameter.ToString();
             //Version.Text = "Compass" + e.Parameter.ToString();
         }
 
@@ -120,11 +120,11 @@ namespace CompassDemo
             EasClientDeviceInformation CurrentDeviceInfor = new Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation();
             String OSVersion = CurrentDeviceInfor.OperatingSystem;
             String Manufacturer = CurrentDeviceInfor.SystemManufacturer;
-            String FriendlyName = CurrentDeviceInfor.FriendlyName;
+            String SystemProductName = CurrentDeviceInfor.SystemProductName;
 
             Windows.ApplicationModel.Email.EmailMessage mail = new Windows.ApplicationModel.Email.EmailMessage();
-            mail.Subject = "[WP8]Feedback" + appversion;
-            mail.Body = "\n\n\nManufacturer：" + Manufacturer + "\nHandy Name：" + FriendlyName + "\nOS Version：" + OSVersion;
+            mail.Subject = "[WP8.1]Feedback" + appversion;
+            mail.Body = "\n\n\nManufacturer：" + Manufacturer + "\nSystem Name：" + SystemProductName + "\nOS Version：" + OSVersion;
             mail.To.Add(new Windows.ApplicationModel.Email.EmailRecipient("mukosame@gmail.com", "Mukosame"));
             await Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(mail);
 

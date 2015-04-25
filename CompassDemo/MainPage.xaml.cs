@@ -39,7 +39,15 @@ namespace CompassDemo
             InitializeComponent();
             Loaded += MainPage_Loaded;
            // String value=localSettings.Values["initSetting"].ToString();
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
             localSettings = ApplicationData.Current.LocalSettings;
+        }
+
+        private void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+        {
+            if (!e.Handled && Frame.CurrentSourcePageType.FullName == "CompassDemo.MainPage")
+                Application.Current.Exit();
+
         }
 
         async void MainPage_Loaded(object sender, RoutedEventArgs e)
