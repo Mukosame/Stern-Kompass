@@ -123,7 +123,7 @@ namespace CompassDemo
             String SystemProductName = CurrentDeviceInfor.SystemProductName;
 
             Windows.ApplicationModel.Email.EmailMessage mail = new Windows.ApplicationModel.Email.EmailMessage();
-            mail.Subject = "[WP8.1]Feedback" + appversion;
+            mail.Subject = "[WP]Feedback" + appversion;
             mail.Body = "\n\n\nManufacturer：" + Manufacturer + "\nSystem Name：" + SystemProductName + "\nOS Version：" + OSVersion;
             mail.To.Add(new Windows.ApplicationModel.Email.EmailRecipient("mukosame@gmail.com", "Mukosame"));
             await Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(mail);

@@ -10,30 +10,30 @@
 		<ImageBrush Stretch="Fill" ImageSource="SplashScreen.jpg"/>
 	</Page.Background>
 
-    <Hub Header="" Margin="0,60,0,0">
+    <Pivot Margin="0,0,0,0">
             <!--1-->
-            <HubSection Header="Calibration">
-                <DataTemplate>
+            <PivotItem Header="Calibration">
+
                     <StackPanel >
                         <Image HorizontalAlignment="Center" Height="211" VerticalAlignment="Top" Width="352" Source="calibrate.png" Margin="0,0,0,0"/>
                     <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" FontSize="21">
                     <LineBreak/><LineBreak/>Hold the device infront of you and sweep it through a figure 8 pattern as shown until the Accuracy is high.<LineBreak/>
-                    <LineBreak/>Please press back to the compass page and start calibration.
+                    <LineBreak/>Please press back button to the compass page and start calibration.
+                        <LineBreak/><LineBreak/>The earth points to the real north.
                     </TextBlock>
                     
                 </StackPanel>
-                </DataTemplate>
-            </HubSection>
+
+            </PivotItem>
             <!--2-->
-            <HubSection Header="Display">
-                <DataTemplate>
+            <PivotItem Header="Display">
+
                 <Image HorizontalAlignment="Center" VerticalAlignment="Top" Source="Capture.jpg" Margin="0,0,0,30"/>
-                </DataTemplate>
-            </HubSection>
+
+            </PivotItem>
             <!--3-->
-            <HubSection Header="Developer">
-                <DataTemplate>
-                    <StackPanel>
+        <PivotItem Header="Developer">
+            <StackPanel>
                     <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top"
                        FontSize="21">
                 <LineBreak/>Mukosame
@@ -45,8 +45,8 @@
                     <Button Content="View my other apps" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="250" Click="otherapp" BorderThickness="1.5"/>
                     </Grid>
                 </StackPanel>
-                </DataTemplate>
-            </HubSection>
-        </Hub>
+                
+            </PivotItem>
+        </Pivot>
  
 </Page>
